@@ -1,4 +1,4 @@
-# Template Java + Springboot + OpenAPI Swagger. 
+# Java e Clean Architecture OpenAPI Swagger. 
 
 ## Tecnologias Utilizadas
 

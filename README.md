@@ -23,8 +23,8 @@
 
 1. **Clone o repositório**:
     ```sh
-    git clone https://github.com/leokenzley/openapiswagger.git
-    cd openapiswagger
+    git clone [https://github.com/leokenzley/tempapiclearch.git](https://github.com/leokenzley/tempapiclearch.git)
+    cd tempapiclearch
     ```
 
 2. **Compile e execute os testes**:

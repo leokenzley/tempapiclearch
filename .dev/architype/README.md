@@ -43,6 +43,10 @@ mvn archetype:generate \
 - `com.novo.projeto` pelo `groupId` da nova aplicação.
 - `minha-nova-app` pelo `artifactId` da nova aplicação.
 
+**Ou execute:**
+```sh
+mvn archetype:generate -DarchetypeCatalog=local
+```
 ---
 
 ## 📌 Passo 3: Executar a Nova Aplicação

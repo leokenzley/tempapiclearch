@@ -43,6 +43,8 @@
 ### Documentação da API
 
 - A documentação da API gerada pelo Springdoc OpenAPI pode ser acessada em `http://localhost:8080/swagger-ui.html`.
+### Gerando o architype desta aplicação
+[Aqui](https://github.com/leokenzley/tempapiclearch/tree/main/.dev/architype)
 
 ## Referências
 

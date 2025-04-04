@@ -3,6 +3,8 @@ package com.leokenzley.templateapi.entrypoints.web.handler;
 import com.leokenzley.templateapi.entrypoints.web.handler.model.ErrorAPI;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -21,6 +23,10 @@ import java.util.Set;
  */
 @ControllerAdvice
 public class WebExceptionHandler {
+
+  @Autowired
+  private MessageSource messageSource;
+
   @ExceptionHandler(MethodArgumentNotValidException.class)
   @ResponseStatus(HttpStatus.BAD_REQUEST)
   public ResponseEntity<Map<String, String>> handleValidationException(MethodArgumentNotValidException ex) {

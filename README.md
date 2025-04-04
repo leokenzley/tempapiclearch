@@ -11,6 +11,7 @@
 - **Jackson Databind**: 2.13.0
 - **Hibernate Validator**: 8.0.0.Final
 - **OpenAPI Generator Maven Plugin**: 6.6.0
+- **I18n**: pt-BR, en-US, es-ES
 
 ## Como Executar a Aplicação
 

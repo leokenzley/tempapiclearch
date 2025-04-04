@@ -2,9 +2,9 @@ package com.leokenzley.templateapi.dataprovider;
 
 import com.leokenzley.templateapi.core.dataprovider.GetUserDataProvider;
 import com.leokenzley.templateapi.core.domain.UserDomain;
+import com.leokenzley.templateapi.core.usecase.users.handler.exception.BusinessBusinnesRulesException;
 import com.leokenzley.templateapi.dataprovider.database.repository.UserRepository;
 import com.leokenzley.templateapi.dataprovider.database.repository.mapper.UserMapper;
-import com.leokenzley.templateapi.dataprovider.handler.exception.DataProviderNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -23,7 +23,7 @@ public class GetUserDataProviderImpl implements GetUserDataProvider {
   @Override
   public UserDomain get(Long id) {
     var userEntity = userRepository.findById(id)
-         .orElseThrow(() -> new DataProviderNotFoundException("User not found"));
+         .orElseThrow(() -> new BusinessBusinnesRulesException("user.notfound"));
     return mapper.toDomain(userEntity);
   }
 }
